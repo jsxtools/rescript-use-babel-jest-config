@@ -1,0 +1,33 @@
+{
+  "name": "rescript-use-babel-jest-config",
+  "version": "1.0.0",
+  "description": "Use your own Babel Jest configuration in Create React App",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jsxtools/rescript-use-babel-jest-config",
+  "homepage": "https://github.com/jsxtools/rescript-use-babel-jest-config#readme",
+  "bugs": "https://github.com/jsxtools/rescript-use-babel-jest-config/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "eslint index.js --cache --ignore-path .gitignore --resolve-plugins-relative-to node_modules"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    }
+  }
+}
